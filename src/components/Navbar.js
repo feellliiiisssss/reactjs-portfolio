@@ -1,28 +1,41 @@
-import React, { useState } from 'react';
-import MenuIcon from '@material-ui/icons/Menu';
-import CloseIcon from '@material-ui/icons/Close';
+import React, { useState } from "react";
+import MenuIcon from "@material-ui/icons/Menu";
+import CloseIcon from "@material-ui/icons/Close";
 
 const Link = (props) => {
-  return <div className="py-2 text-white">{props.label}</div>;
-}
+  return <div className="py-2 md:py-0 md:px-2 text-yellow-900">{props.label}</div>;
+};
 
 const Navbar = () => {
   const [isMenuShow, setIsMenuShow] = useState(false);
 
   return (
-    <div className="p-4 bg-indigo-600">
-      <div className="flex justify-between">
-        <span className="text-white">Navbar</span>
-        <div className="text-white block md:hidden" onClick={() => setIsMenuShow(!isMenuShow)}>{isMenuShow ? <CloseIcon /> : <MenuIcon />}</div>
-      </div>
-      {isMenuShow &&
-        <div>
-          <Link label="Home"/>
-          <Link label="About"/>
-          <Link label="Contact"/>
+    <>
+      <div className="sticky-top p-4 bg-[#ffcc1d] drop-shadow-md">
+        <div className="flex justify-between">
+          <span className="text-yellow-900 font-['Playfair_Display'] cursor-pointer">✦ It's Felis</span>
+          <div className="cursor-pointer hidden md:flex text-yellow-900">
+            <Link label="Home" />
+            <Link label="About" />
+            <Link label="Services" />
+            <Link label="Portfolio" />
+            <Link label="Contact" />
+          </div>
+          <div className="cursor-pointer text-yellow-900 block md:hidden" onClick={() => setIsMenuShow(!isMenuShow)}>
+            {isMenuShow ? <CloseIcon /> : <MenuIcon />}
+          </div>
         </div>
-      }
-    </div>
+        {isMenuShow && (
+          <div className="cursor-pointer">
+            <Link label="Home" />
+            <Link label="About" />
+            <Link label="Services" />
+            <Link label="Portfolio" />
+            <Link label="Contact" />
+          </div>
+        )}
+      </div>
+    </>
   );
 };
 
