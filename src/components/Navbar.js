@@ -11,9 +11,9 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="sticky-top p-4 bg-[#ffcc1d] drop-shadow-md">
+      <div className="sticky-top absolute top-0 left-0 right-0 p-4 bg-[#ffcc1d] drop-shadow-md">
         <div className="flex justify-between">
-          <span className="text-yellow-900 font-['Playfair_Display'] cursor-pointer">✦ It's Felis</span>
+          <span className="text-yellow-900 font-['Playfair_Display'] cursor-pointer">✦</span>
           <div className="cursor-pointer hidden md:flex text-yellow-900">
             <Link label="Home" />
             <Link label="About" />
