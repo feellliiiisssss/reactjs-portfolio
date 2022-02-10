@@ -13,11 +13,11 @@ const Navbar = () => {
     <>
       <div className="sticky-top absolute top-0 left-0 right-0 p-4 bg-[#ffcc1d] drop-shadow-md">
         <div className="flex justify-between">
-          <span className="text-yellow-900 font-['Playfair_Display'] cursor-pointer">✦</span>
+          <span className="text-yellow-900 font-['Playfair_Display'] cursor-pointer">✦ Good Day!</span>
           <div className="cursor-pointer hidden md:flex text-yellow-900">
             <Link label="Home" />
             <Link label="About" />
-            <Link label="Services" />
+            <Link label="Skills" />
             <Link label="Portfolio" />
             <Link label="Contact" />
           </div>
@@ -29,7 +29,7 @@ const Navbar = () => {
           <div className="cursor-pointer">
             <Link label="Home" />
             <Link label="About" />
-            <Link label="Services" />
+            <Link label="Skills" />
             <Link label="Portfolio" />
             <Link label="Contact" />
           </div>
