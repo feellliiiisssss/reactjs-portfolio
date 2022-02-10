@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <div className="m-auto min-h-screen flex items-center justify-center bg-[#FFCC1D]">
       <div className="text-white">
-        <p className="font-['Reem_Kufi'] md:text-xl text-center text-[#0B4619]">it's about</p>
+        <p className="font-['Reem_Kufi'] md:text-xl text-center text-[#0B4619] pt-44">it's about</p>
         <p className="md:text-9xl text-7xl text-center font-['Bebas_Neue'] tracking-wide">ARLYNANDHITA</p>
         <p className="md:text-9xl text-7xl text-center font-['Bebas_Neue'] tracking-wide">FELISYA</p>
         <div className="flex justify-center">
