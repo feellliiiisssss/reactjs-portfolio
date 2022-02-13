@@ -24,7 +24,7 @@ const Skill = () => {
           <div className="md:my-10 my-2">
             <img src="./skill/figma.png" className="h-20 lg:h-40"></img>
           </div>
-          <div className="md:mt-10 mt-2 col-start-2">
+          <div className="md:mt-10 mt-2 col-start-2 md:col-auto">
             <img src="./skill/ps.png" className="h-20 lg:h-40"></img>
           </div>
         </div>
