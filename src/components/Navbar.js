@@ -18,7 +18,7 @@ const Navbar = () => {
             <Link label="Home" />
             <Link label="About" />
             <Link label="Skills" />
-            <Link label="Portfolio" />
+            <Link label="Project" />
             <Link label="Contact" />
           </div>
           <div className="cursor-pointer text-yellow-900 block md:hidden" onClick={() => setIsMenuShow(!isMenuShow)}>
@@ -30,7 +30,7 @@ const Navbar = () => {
             <Link label="Home" />
             <Link label="About" />
             <Link label="Skills" />
-            <Link label="Portfolio" />
+            <Link label="Project" />
             <Link label="Contact" />
           </div>
         )}
