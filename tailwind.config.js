@@ -28,6 +28,11 @@ module.exports = {
       plugins: [
         require("tailwindcss-text-fill-stroke")(), // no options to configure
       ],
+
+      fontFamily: {
+        "lemon-reg": ["LEMON MILK"],
+        "bebas-neue": ["Bebas_Neue"],
+      },
     },
   },
   plugins: [],

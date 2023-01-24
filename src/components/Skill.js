@@ -1,35 +1,26 @@
 import React from "react";
 
-const Skill = () => {
+const Skills = () => {
   return (
-    <div className="min-h-max w-auto flex items-center justify-center p-6 bg-[#0B4619]">
-      <div className="container">
-        <div className="font-['Playfair_Display'] text-white md:text-6xl text-[38px] tracking-wide text-center uppercase">Skills</div>
-        <div className="pl-6 pt-4 grid grid-cols-3 md:grid-cols-7 lg:gap-12 sm:gap-4 md:pt-4">
-          <div className="md:my-10 my-2">
-            <img src="./skill/HTML.png" className="h-20 lg:h-40"></img>
-          </div>
-          <div className="md:my-10 my-2">
-            <img src="./skill/CSS.png" className="h-20 lg:h-40"></img>
-          </div>
-          <div className="md:my-10 my-2">
-            <img src="./skill/JS.png" className="h-20 lg:h-40"></img>
-          </div>
-          <div className="md:my-10 my-2">
-            <img src="./skill/react.png" className="h-20 lg:h-40"></img>
-          </div>
-          <div className="md:my-10 my-2">
-            <img src="./skill/Tailwind.png" className="h-20 lg:h-40"></img>
-          </div>
-          <div className="md:my-10 my-2">
-            <img src="./skill/figma.png" className="h-20 lg:h-40"></img>
-          </div>
-          <div className="md:mt-10 mt-2 col-start-2 md:col-auto">
-            <img src="./skill/ps.png" className="h-20 lg:h-40"></img>
-          </div>
-        </div>
+    <div className="min-h-max m-auto md:flex items-center justify-center md:p-40 px-10 py-20 bg-[#F5CBA7]">
+      <div className="grid gap-10">
+        <p className="text-[#FF491F] md:text-7xl text-4xl font-bold tracking-wide font-lemon-reg md:font-outline-4 font-outline-2">Skills & Experiences</p>
+        <img src="skills.png" class="mb-5 md:mb-0 mx-auto md:mx-0 md:w-96 w-28"></img>
+      </div>
+      <div className="text-[#503B40] font-['Cabin'] grid md:grid-rows-2 gap-3 mx-16">
+        <p className="text-[#FF491F] md:text-4xl text-3xl font-bold tracking-wide font-lemon-reg">Skills</p>
+        <p className="lg:text-justify lg:text-xl font-medium text-justify">
+          Hi! i’m Arlynandhita Felisya. I’m an undergraduate student of Information System 2021 at Multimedia Nusantara University, and I’m interested to design
+          and programming.
+        </p>
+        <p className="lg:text-justify lg:text-xl text-justify">
+          Right now, i’m searching for any experience in many areas, especially at design and give my effort to rise up my programming skills. It was a cool
+          thing while we can saw a beautiful world inside the screen. Then, I am decide to attempt my design skill to make a beautiful website with my
+          programming skill. I’m a friendly person so i can work as a team, but work individually is not a problem. Let’s be friend with me!
+        </p>
       </div>
     </div>
   );
 };
-export default Skill;
+
+export default Skills;
