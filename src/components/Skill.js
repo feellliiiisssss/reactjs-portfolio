@@ -1,6 +1,17 @@
-import React from "react";
+import { data } from "autoprefixer";
+import React, { useState } from "react";
+
+const SkillSquare = (props) => {
+  return (
+    <div className="text-[#503B40] bg-white w-fit h-fit font-medium rounded-full text-center px-5 py-2.5 border-solid border-2 border-[#503B40]">
+      {props.data}
+    </div>
+  );
+};
 
 const Skills = () => {
+  const [array, setArray] = useState(["HTML", "CSS", "Javascript", "Typescript", "TailwindCSS", "ChakraUI", "Bootstrap", "React", "Figma", "Git", "Photoshop"]);
+
   return (
     <div className="min-h-max m-auto md:flex items-center justify-center md:p-40 px-10 py-20 bg-[#F5CBA7]">
       <div className="grid gap-10">
@@ -13,11 +24,7 @@ const Skills = () => {
           Hi! i’m Arlynandhita Felisya. I’m an undergraduate student of Information System 2021 at Multimedia Nusantara University, and I’m interested to design
           and programming.
         </p>
-        <p className="lg:text-justify lg:text-xl text-justify">
-          Right now, i’m searching for any experience in many areas, especially at design and give my effort to rise up my programming skills. It was a cool
-          thing while we can saw a beautiful world inside the screen. Then, I am decide to attempt my design skill to make a beautiful website with my
-          programming skill. I’m a friendly person so i can work as a team, but work individually is not a problem. Let’s be friend with me!
-        </p>
+        <SkillSquare data={array}></SkillSquare>
       </div>
     </div>
   );
