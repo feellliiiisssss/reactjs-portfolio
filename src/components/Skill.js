@@ -1,16 +1,20 @@
 import { data } from "autoprefixer";
 import React, { useState } from "react";
 
-const SkillSquare = (props) => {
+const SkillSquare = ({ blogs }) => {
   return (
-    <div className="text-[#503B40] bg-white w-fit h-fit font-medium rounded-full text-center px-5 py-2.5 border-solid border-2 border-[#503B40]">
-      {props.data}
+    <div className="maumarah">
+      {blogs.map((blog) => (
+        <div className="text-[#503B40] bg-white w-fit h-fit font-medium rounded-full text-center px-5 py-2.5 border-solid border-2 border-[#503B40]">
+          {blog.blogs}
+        </div>
+      ))}
     </div>
   );
 };
 
 const Skills = () => {
-  const [array, setArray] = useState(["HTML", "CSS", "Javascript", "Typescript", "TailwindCSS", "ChakraUI", "Bootstrap", "React", "Figma", "Git", "Photoshop"]);
+  const [blogs, setBlogs] = useState(["HTML", "CSS", "Javascript", "Typescript", "TailwindCSS", "ChakraUI", "Bootstrap", "React", "Figma", "Git", "Photoshop"]);
 
   return (
     <div className="min-h-max m-auto md:flex items-center justify-center md:p-40 px-10 py-20 bg-[#F5CBA7]">
@@ -24,7 +28,7 @@ const Skills = () => {
           Hi! i’m Arlynandhita Felisya. I’m an undergraduate student of Information System 2021 at Multimedia Nusantara University, and I’m interested to design
           and programming.
         </p>
-        <SkillSquare data={array}></SkillSquare>
+        <SkillSquare blogs={blogs}></SkillSquare>
       </div>
     </div>
   );
