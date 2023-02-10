@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="min-h-max m-auto md:flex items-center justify-center md:p-32 px-10 py-20 bg-[#E2DBD1]">
+    <div className="min-h-max m-auto md:flex items-center justify-center md:p-32 px-8 py-20 bg-[#E2DBD1]">
       <img src="smile.png" class="md:pt-20 md:mx-10 mb-5 md:mb-0 mx-auto md:w-60 w-28"></img>
       <div className="text-[#503B40] font-['Cabin'] grid md:grid-rows-2 grid-rows-1 gap-3">
         <p className="text-[#FDE98F] md:text-7xl text-4xl font-bold md:py-3 tracking-wide font-lemon-reg md:font-outline-4 font-outline-2">ABOUT ME:</p>
