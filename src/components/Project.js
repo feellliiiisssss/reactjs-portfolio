@@ -10,9 +10,14 @@ const Project = () => {
           </div>
           <p className="lg:text-justify lg:text-xl text-center text-black">Feel free to enjoy my work by click on button below</p>
           <div className="flex justify-center">
-            <div className="md:font-medium md:text-lg text-sm text-[#503B40] bg-[#FFCC1D] w-fit h-fit font-medium rounded-full text-center md:px-5 md:py-2.5 px-3 py-1.5 border-solid border-2 border-[#503B40]">
-              Get More
-            </div>
+            <a href="https://drive.google.com/drive/folders/12HAZw42f5fYOJEqjZT-jtcn9aoJSWYYZ?usp=share_link">
+              <div
+                type="button"
+                className="md:font-medium md:text-lg text-sm text-[#503B40] bg-[#FFCC1D] w-fit h-fit font-medium rounded-full text-center md:px-5 md:py-2.5 px-3 py-1.5 border-solid border-2 border-[#503B40]"
+              >
+                Get More
+              </div>
+            </a>
           </div>
         </div>
       </div>
